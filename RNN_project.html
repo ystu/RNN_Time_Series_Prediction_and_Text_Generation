@@ -12591,8 +12591,7 @@ gmJmZqVwQTEzs1K4oJiZWSn+D7AD6Vs8fSjGAAAAAElFTkSuQmCC
 
 <span class="c1"># TODO: implement build_part1_RNN in my_answers.py</span>
 <span class="kn">from</span> <span class="nn">my_answers</span> <span class="k">import</span> <span class="n">build_part1_RNN</span>
-<span class="n">lstm_size</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">build_part1_RNN</span><span class="p">(</span><span class="n">window_size</span><span class="p">,</span> <span class="n">lstm_size</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">build_part1_RNN</span><span class="p">(</span><span class="n">window_size</span><span class="p">)</span>
 
 <span class="c1"># build model using keras documentation recommended optimizer initialization</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">RMSprop</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> <span class="n">decay</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
@@ -13987,8 +13986,7 @@ and these characters are
 <span class="c1"># TODO implement build_part2_RNN in my_answers.py</span>
 <span class="kn">from</span> <span class="nn">my_answers</span> <span class="k">import</span> <span class="n">build_part2_RNN</span>
 
-<span class="n">lstm_size</span> <span class="o">=</span> <span class="mi">200</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">build_part2_RNN</span><span class="p">(</span><span class="n">window_size</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">chars</span><span class="p">),</span> <span class="n">lstm_size</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">build_part2_RNN</span><span class="p">(</span><span class="n">window_size</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">chars</span><span class="p">))</span>
 
 <span class="c1"># initialize optimizer</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">RMSprop</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> <span class="n">decay</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
